@@ -27,7 +27,7 @@ public class ReflectionTest {
             if (supercl != null && supercl != Object.class) {
                 System.out.println(supercl.getName());
             }
-        };
+        }
 
         System.out.println("\n{\n");
         printConstructors(cl);
@@ -59,6 +59,7 @@ public class ReflectionTest {
                 System.out.print(paramTypes[j].getName());
             }
             System.out.println(");");
+            System.out.println("Mher");
         }
     }
 
