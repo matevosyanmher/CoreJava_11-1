@@ -1,11 +1,11 @@
 package Chepter_03;
 
-import org.jetbrains.annotations.NotNull;
+
 
 import java.util.Arrays;
 
 public class Message {
-    public static void main(String @NotNull [] args) {
+    public static void main(String  [] args) {
         args = new String[]{"-g", "bad","world"};
         if (args[0].equals("-q")) {
             System.out.print("Hallo");
@@ -17,7 +17,7 @@ public class Message {
         }
         System.out.println("!");
 
-        String[] name =new String[8];
+        String[] name =new String[4];
         System.out.println(Arrays.toString(name));
     }
 }
