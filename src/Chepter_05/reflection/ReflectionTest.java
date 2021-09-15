@@ -59,7 +59,7 @@ public class ReflectionTest {
                 System.out.print(paramTypes[j].getName());
             }
             System.out.println(");");
-            System.out.println("Mher");
+
         }
     }
 
