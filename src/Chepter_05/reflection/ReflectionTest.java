@@ -49,17 +49,21 @@ public class ReflectionTest {
             String name = c.getName();
             System.out.print(" ");
             String modifiers = Modifier.toString(c.getModifiers());
-             if (modifiers.length()>0) System.out.println(modifiers + " ");
+            if (modifiers.length() > 0) System.out.println(modifiers + " ");
             System.out.print(name + ")");
 
             // print parameter types
             Class[] paramTypes = c.getParameterTypes();
             for (int j = 0; j < paramTypes.length; j++) {
-                if (j>0) System.out.print(", ");
+                if (j > 0) System.out.print(", ");
                 System.out.print(paramTypes[j].getName());
             }
             System.out.println(");");
-
+            try {
+                Math.class.getMethod("sqrt", double.class);
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            }
         }
     }
 

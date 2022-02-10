@@ -7,7 +7,10 @@ import java.util.Random;
 
 public class Reflect {
 
+    Double aDouble = Double.parseDouble("20.3");
+
     public static void main(String[] args) throws ReflectiveOperationException{
+
         var random = new Random();
         Class cl = random.getClass();
         String name = cl.getName();
@@ -34,5 +37,9 @@ public class Reflect {
 
         if (employee.getClass() == Manager.class) System.out.println(true);
         else System.out.println(false);
+
+
+
+
     }
 }
